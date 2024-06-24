@@ -76,6 +76,9 @@ h3 {
   font-size: 28px;
   text-decoration: none;
 }
+.email-link:hover {
+  color: tomato;
+}
 .about-paragraphs {
   display: flex;
   flex-direction: row-reverse;
@@ -107,6 +110,9 @@ h3 {
   box-shadow: var(--box-shadow);
   color: white;
 }
+.primary-link:hover {
+  color: antiquewhite;
+}
 
 .secondary-link {
   border-radius: 4px;
@@ -115,4 +121,26 @@ h3 {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+.secondary-link:hover {
+  color: rgb(46, 94, 46);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
